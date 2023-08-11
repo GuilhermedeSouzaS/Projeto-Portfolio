@@ -1,7 +1,209 @@
+:root {
+    --fonte-principal: "Kanit";
+    --cor-primaria: #07354B;
+    --cor-secundaria: #d0cd94;
+    --cor-terciaria: #6A041D;
+    --cor-fonte-clara: #c7c7c7;
+    --cor-fonte-escura: #1B1C1E;
+    --cor-fundo-primario: #2B2B2B;
+    --cor-fundo-secundario: #1F1F1F; 
+
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte-clara);
+    height: 1000px;
+
+}
+
 .cabecalho {
     width: 100%;
     height: 100vh;
     background-image: url(img/background.svg);
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    background-attachment: fixed;
 
 }
+
+.cabecalho_img {
+    background-color: var(--cor-secundaria);
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+.cabecalho_nome {
+    font-size: 2.5em;
+    padding-top: 1em;
+    text-shadow: 15px 15px 10px #000000;  
+    
+}
+
+.cabecalho_profissao {
+    font-size: 1.5em;
+    padding-top: 1em;
+    text-shadow: 15px 15px 10px #000000;  
+
+}
+
+.cabecalho_icones {
+    display: flex;
+    padding-top: 1em;
+    gap: 20px;
+
+
+}
+
+.icone_git {
+    background-image: url(img/icone-github-preto.svg);
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    transition-duration: .5s;
+
+}
+
+.icone_git:hover {
+    background-image: url(img/icone-github-colorido.svg);
+    scale: 1.4;
+    transition-duration: .5s;
+    cursor: pointer;
+
+}
+
+.icone_linkedin {
+    background-image: url(img/icone-linkedin-preto.svg);
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    transition-duration: .5s;
+    
+}
+
+.icone_linkedin:hover {
+    background-image: url(img/icone-linkedin-colorido.svg);
+    scale: 1.4;
+    transition-duration: .5s;
+    cursor: pointer;
+
+}
+
+.cabecalho_botao {
+    text-decoration: none;
+    color: var(--cor-fonte-escura);
+    background-color: var(--cor-secundaria);
+    padding: 1em;
+    margin-top: 3em;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition-duration: .5s;
+
+}
+
+.cabecalho_botao:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-fonte-clara);
+    scale: 1.1;
+    transition-duration: .5s;
+
+}
+
+.menu {
+    position: fixed;
+    left: 50px;
+    top: 50px;
+
+}
+
+.menu_lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu_icone {
+    width: 55px;
+    height: 55px;
+    background-color: var(--cor-secundaria);
+    background-image: url(img/icone-menu.svg);
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition-duration: .5s;
+
+}
+
+.menu_icone:hover {
+    background-color: var(--cor-terciaria);
+    scale: 1.1;
+    transition-duration: .5s;
+
+}
+
+.menu_lista-item {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--cor-secundaria);
+    margin-top: .5em;
+    position: relative;
+    display: none;
+
+}
+
+.lista_item-home {
+    background-image: url(img/icone-home.svg);
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+
+}
+
+.lista_item-sobre {
+    background-image: url(img/icone-sobre.svg);
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+
+}
+
+.lista_item-projetos {
+    background-image: url(img/icone-projetos.png);
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+
+}
+
+.lista_item-contato {
+    background-image: url(img/icone-contato.png);
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+
+}
+
+.lista_item-texto {
+    position: absolute;
+    left: 60px;
+    top: 17px;
+    min-width:124px;
+
+}
+

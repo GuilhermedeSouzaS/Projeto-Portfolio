@@ -1,0 +1,45 @@
+Menu {
+
+	Home
+	Sobre mim
+	Projetos
+	Entre em contato
+}
+
+Cabeçalho {
+	
+	Foto ou arte que me represente
+	Meu nome
+	Profissão
+	Redes Sociais
+	Botão de ação(me contrate) 
+
+}
+
+Principal {
+	
+	Sobre mim {
+
+		Informações sobre meus estudos, conhecimento, projetos, desafios e objetivos.
+	}
+
+	Projetos {
+
+		Todos os projetos desenvolvidos em curso e projetos pessoais.
+	}
+
+	Entre em contato {
+	
+		Formulário para entrar em contato {
+		
+			Formulário deve conter nome,telefone, se é wpp, email e uma mensagem.
+		}
+	}
+}
+
+Rodape {
+	
+	Meu nome
+	Copywright
+	Links do menu
+}
