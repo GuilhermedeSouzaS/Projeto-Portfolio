@@ -10,15 +10,21 @@
 
 }
 
-body {
+body, html {
     font-family: var(--fonte-principal);
     color: var(--cor-fonte-clara);
+
+
+}
+
+html > ::-webkit-scrollbar {
+    display: none;
 
 }
 
 
 .scrollbar {
-    width: 51px;
+    width: 100px;
     height: 70%;
     position: fixed;
     top: 90px;
@@ -31,7 +37,7 @@ body {
 
 .scrollbar__content {
     width: 100%;
-    height: 700%;
+    height: 800%;
 }
 
 .scrollbar::-webkit-scrollbar {
